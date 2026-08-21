@@ -11,6 +11,13 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
         <p>${data.explanation}</p>
     `;
 })
+let media;
+
+if (data.media_type === "image") {
+    media = `<img src="${data.url}"/>`;
+} else {
+    media = `<video src="${data.url}" controls></video>`;
+}
 
 const date = document.querySelector("#datepicker").value;
 fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${date}`)
