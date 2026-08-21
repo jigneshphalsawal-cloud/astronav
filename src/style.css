@@ -45,6 +45,7 @@ body::after {
 }
     h1 {
       color: #38bdf8;
+      font-family: 'Orbitron', sans-serif;
       
     }
 
@@ -67,4 +68,10 @@ p {
   line-height: 1.7;
   text-align: left;
   font-family: 'Black Ops One', sans-serif;
+}
+@media (max-width: 800px) {
+  body::before,
+  body::after {
+    display: none;
+  }
 }
