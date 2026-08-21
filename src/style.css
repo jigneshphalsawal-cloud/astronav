@@ -1,0 +1,112 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #08111f;
+      color: white;
+      margin: auto ;
+      
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px;
+      
+    }
+
+    h1 {
+      color: #38bdf8;
+      transition: all 0.3s ease-in-out;
+    }
+      
+      
+      header h1:hover {
+  color: #38bdf8;
+  letter-spacing: 2px;
+  
+  
+}
+    
+
+    .card {
+      background: #122033;
+      border: 1px solid #33475c;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      width: 100%;
+     transition: all 0.3s ease-in-out;
+     
+    }
+    .card img :hover{
+      background: #122033;
+      text-shadow: 2px;
+
+    }
+
+
+    
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    button {
+      
+      background: #122033;
+      color: white;
+      border: 1px solid #38bdf8;
+      padding: 10px;
+      
+      transition: all 0.25s ease-in-out;
+    }
+
+    button:hover {
+      background: #38bdf8;
+      padding: 15px;
+      color: black;
+      border:1px solid #38bdf8;
+    }
+
+  
+
+    footer{
+      text-align: center;
+      padding: 30px;
+      color: #999;
+    }
+    
+    header p {
+  color: #94a3b8;
+  font-size: 1.1;
+  letter-spacing: 1px;
+  
+  
+  transition: all 0.3s ease-in-out;
+  
+  
+  
+}
+
+
+header p:hover {
+  color: #38bdf8;
+  letter-spacing: 2px;
+  text-shadow: 2px;
+}
+
+
+
