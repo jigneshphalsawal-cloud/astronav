@@ -1,10 +1,9 @@
 body {
-      margin: 0;
-      padding: 2px;
-      position: relative;
-      min-height: 100vh;
-      
-    }
+  margin: 0;
+  background-color: #0b021a; 
+  color: #97763d;
+  min-height: 100vh;
+}
 
  body::before {
   content: '';
