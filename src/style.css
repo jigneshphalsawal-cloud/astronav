@@ -36,52 +36,36 @@ body {
       z-index: -1;
       background: linear-gradient(to bottom, #1f3c7f, #122033);
     }
+title{
+  color: #1f3c7f;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
 
+
+}
     h1 {
       color: #38bdf8;
       
     }
-      header h1:hover {
-  color: #38bdf8;
-  letter-spacing: 2px;
-  
-  
-}
-     #app {
-      background: #122033;
-      border: 1px solid #33475c;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      width: 100%;
-     transition: all 0.3s ease-in-out;
-     
-    }
-    .card img :hover{
-      background: #122033;
-      text-shadow: 2px;
 
-    }
-
-     img, video {
-      width: 100%;
-      max-height: 350px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    p {
-  color: #94a3b8;
-  font-size: 1.1;
-  letter-spacing: 1px;
-  }
-
-
-header p:hover {
-  color: #38bdf8;
-  letter-spacing: 2px;
-  text-shadow: 2px;
+#app {
+  margin: 0 auto;
+  padding: 0.24em;
+  text-align: center;
 }
 
 
 
+img, video {
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #e1d7f1;
+  line-height: 1.7;
+  text-align: left;
+  font-family: 'Black Ops One', sans-serif;
+}
