@@ -43,6 +43,81 @@ body::after {
   );
 }
 
+.site-header {
+  text-align: center;
+  padding: 40px 20px 30px;
+  margin-bottom: 0;
+}
+
+.site-header h1 {
+  color: #38bdf8;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0 0 10px 0;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.tagline {
+  color: #a78ae0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background: rgba(11, 2, 26, 0.8);
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: rgba(56, 189, 248, 0.1);
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: #38bdf8;
+  color: #0b021a;
+}
+
+.tab-btn.active {
+  background: #38bdf8;
+  color: #0b021a;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 h1 {
   color: #38bdf8;
   font-family: 'Orbitron', sans-serif;

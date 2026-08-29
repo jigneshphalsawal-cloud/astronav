@@ -1,5 +1,18 @@
 const API_KEY = "uKDQ5WDDtwZdqbmbr0t6HggLZY5WblDkZDhsocxQ";
 
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active class from all buttons and content
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+    // Add active class to clicked button and corresponding content
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+
 // NASA Photo of the Day
 fetch("https://api.nasa.gov/planetary/apod?api_key=" + API_KEY)
   .then(res => res.json())

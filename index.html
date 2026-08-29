@@ -3,15 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astronav</title>
+    <title>ASTRONAV</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Black+Ops+One&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
 
-    <div id="app"></div>
-    <div id="asteroid-app"></div>
-    <div id="news-app"></div>
+    <header class="site-header">
+      <h1>🚀 ASTRONAV</h1>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="apod">📷 Photo</button>
+      <button class="tab-btn" data-tab="asteroids">☄️ Asteroids</button>
+      <button class="tab-btn" data-tab="news">📰 News</button>
+    </nav>
+
+    <div class="tab-content active" id="apod">
+      <div id="app"></div>
+    </div>
+
+    <div class="tab-content" id="asteroids">
+      <div id="asteroid-app"></div>
+    </div>
+
+    <div class="tab-content" id="news">
+      <div id="news-app"></div>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
