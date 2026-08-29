@@ -1,41 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ASTRONAV</title>
-  <link rel="stylesheet" href="/src/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astronav</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Black+Ops+One&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
 
-  <header>
-    <h1>ASTRONAV</h1>
-  </header>
+    <div id="app"></div>
+    <div id="asteroid-app"></div>
+    <div id="news-app"></div>
 
-  <nav>
-    <a href="#apod">Photo</a>
-    <a href="#asteroids">Asteroids</a>
-    <a href="#news">News</a>
-  </nav>
-
-  <main>
-    <section id="apod">
-      <h2>NASA Photo</h2>
-      <div id="apod-content">Loading...</div>
-    </section>
-
-    <section id="asteroids">
-      <h2>Asteroids</h2>
-      <div id="asteroid-content">Loading...</div>
-    </section>
-
-    <section id="news">
-      <h2>News</h2>
-      <div id="news-content">Loading...</div>
-    </section>
-  </main>
-
-  <script src="/src/main.js" type="module"></script>
-
-</body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
